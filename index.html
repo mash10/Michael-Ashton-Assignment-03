@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Backbone Cellar</title>
+	<!-- Original css-->
+	<link rel="stylesheet" href="css/styles.css" />
+	<!-- Bootstrap css-->
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen" />
+
+</head>
+
+<body>
+
+
+
+	<div id="sidebar"></div>
+	
+	
+	<div class="span9">
+	<div id="content">
+    
+		<h2>Backbone Cellar Assignment</h2>
+        
+		<p>
+        
+		My name is Michael Ashton and this is an assignment for my web scripting class. Enjoy!
+        
+		</p>
+		</div>
+	</div>
+	
+	
+	
+	<!-- Templates -->
+	<script type="text/template" id="tpl-wine-list-item"> 
+				<a href="#wines/<%=id%>"><%= name %> </a>
+	</script>
+	
+	<script type="text/template" id="tpl-wine-details">
+				<div class="form-left-col">
+				ID: <%= id %> <br/>
+				Pairs With: <%= pairswith %> </br>
+				Name: <%= name %> <br/>
+				Grapes: <%= grapes %> <br/>
+				Country: <%= country %> <br/>
+				Region: <%= region %> <br/>
+				Year: <%= year %> <br/>
+				</div>
+		
+		<div class="form-right-col">
+		<img src="pics/<%= picture %>" />
+		<br/>
+		Notes:
+		<%= description %>
+		</div>
+		
+	</script>
+		
+	<script src="lib/jquery-1.7.1.min.js"></script>
+	<script src="lib/underscore-min.js"></script>
+	<script src="lib/backbone-min.js"></script>
+	<script src="js/main.js"></script>   
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>
